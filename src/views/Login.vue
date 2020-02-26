@@ -86,7 +86,6 @@ export default {
                 type: "error"
               });
               //测试强制进入后台
-              sessionStorage.setItem("token", response.data.Ticket);
               this.$router.push({ name: "admin" });
             });
         } else {
