@@ -98,7 +98,9 @@ export default {
     loadData() {
       this.loading = true;
       this.$http
-        .get("Cases/GetCasesAll")
+      //测试post接口修改
+        .post("Cases/GetCasesAll",{},{})
+        // .post("Cases/ModifiedCases", this.formData, this.options)
         .then(response => {
           window.console.log(response);
           this.tableData = response.data;
