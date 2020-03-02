@@ -3,10 +3,10 @@
     <swiper id="swiperBox" v-bind:options="swiperOption" ref="mySwiper">
       <swiper-slide class="swiper-slide slide-one">
         <div class="page">
-          <h3>科建股份</h3>
-          <p>KeJian Stock</p>
+          <h3>云开数据</h3>
+          <p>YunKai Data</p>
         </div>
-        <p class="slogan">立人立己 达人达己</p>
+        <p class="slogan">云上开花 数据结果</p>
       </swiper-slide>
       <swiper-slide class="swiper-slide slide-two">
         <div class="page">
