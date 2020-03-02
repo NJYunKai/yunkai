@@ -38,7 +38,9 @@ export default {
   mounted() {
     window.console.log("case");
     this.$http
-      .get("Cases/GetCasesAll")
+    //测试post接口修改
+      // .get("Cases/GetCasesAll")
+      .post("Cases/GetCasesAll",{},{})
       .then(response => {
         //console.log(response);
         this.caseList = response.data;
