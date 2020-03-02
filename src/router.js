@@ -103,7 +103,10 @@ let kejianrouter = new Router({
         }
       ]
     }
-  ]
+  ],
+  // mode: 'history'
+  base: process.env.BASE_URL,
+
 })
 
 // 判断是否需要登录权限 以及是否登录

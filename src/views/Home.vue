@@ -7,6 +7,13 @@
           <p>YunKai Data</p>
         </div>
         <p class="slogan">云上开花 数据结果</p>
+        <div data-v-5aff6e40 class="toptitleup" style="transform: scale(0.5);">
+          <div data-v-5aff6e40 class="mouse">
+          </div>
+          <p data-v-5aff6e40 class="mousep">
+            鼠标滚动
+          </p>
+        </div>
       </swiper-slide>
       <swiper-slide class="swiper-slide slide-two">
         <div class="page">
@@ -68,6 +75,7 @@
  
 <script>
 import { swiper, swiperSlide } from "vue-awesome-swiper";
+import "../assets/css/home.css"
 export default {
   name: "HelloWorld",
   components: {
@@ -138,7 +146,7 @@ export default {
   }
 };
 </script>
- 
+
 <style lang="scss" scoped>
 /* .el-header {
   position: absolute;

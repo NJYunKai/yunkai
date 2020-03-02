@@ -36,7 +36,7 @@ axios.defaults.timeout = 5000
 //全局定义axios
 // axios.defaults.baseURL = 'http://shkjgw.shkjem.com/api/'
 //本地测试地址
-axios.defaults.baseURL = ' http://localhost:8080/website/interface/'
+axios.defaults.baseURL = ' http://localhost:8081/website/interface/'
 // http://localhost:8080/website/interface/Cases/GetCasesAll
 Vue.prototype.$http = axios
 
