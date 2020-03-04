@@ -112,6 +112,7 @@ export default {
       this.loading = true;
       this.$http
         .get("News/GetNewsAll?type=0&num=10")
+        // .post("News/GetNewsAll",{type:0,num:10},{})
         .then(response => {
           // window.console.log(response);
           this.tableData = response.data;
@@ -197,6 +198,7 @@ export default {
           this.loading = true;
           this.$http
             .post(`News/DeleteNews?id=${row.Id}`, null, this.options)
+            // .post(`News/DeleteNews`, {id:row.Id}, this.options)
             .then(response => {
               this.loading = false;
               window.console.log(response);
