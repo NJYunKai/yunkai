@@ -91,6 +91,7 @@ export default {
       this.loading = true;
       this.$http
         .get("Enterprise/GetEnterpriseAll")
+        // .post("Enterprise/GetEnterpriseAll",{},{})
         .then(response => {
           window.console.log(response);
           this.tableData = response.data;
@@ -181,6 +182,7 @@ export default {
               null,
               this.options
             )
+            // .post(`Enterprise/DeleteEnterprise`, { id: row.id }, this.options)
             .then(response => {
               this.loading = false;
               window.console.log(response);

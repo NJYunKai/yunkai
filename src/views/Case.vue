@@ -39,8 +39,8 @@ export default {
     window.console.log("case");
     this.$http
     //测试post接口修改
-      // .get("Cases/GetCasesAll")
-      .post("Cases/GetCasesAll",{},{})
+      .get("Cases/GetCasesAll")
+      // .post("Cases/GetCasesAll",{},{})
       .then(response => {
         //console.log(response);
         this.caseList = response.data;

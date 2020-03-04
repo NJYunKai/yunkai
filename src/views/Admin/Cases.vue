@@ -99,8 +99,8 @@ export default {
       this.loading = true;
       this.$http
       //测试post接口修改
-        .post("Cases/GetCasesAll",{},{})
-        // .post("Cases/ModifiedCases", this.formData, this.options)
+        // .post("Cases/GetCasesAll",{},{})
+        .get("Cases/GetCasesAll")
         .then(response => {
           window.console.log(response);
           this.tableData = response.data;
@@ -189,6 +189,7 @@ export default {
           this.loading = true;
           this.$http
             .post(`Cases/DeleteCases?id=${row.Id}`, null, this.options)
+            // .post(`Cases/DeleteCases`, {id:row.id}, this.options)
             .then(response => {
               this.loading = false;
               window.console.log(response);

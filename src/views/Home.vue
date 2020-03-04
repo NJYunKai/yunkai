@@ -254,7 +254,7 @@ export default {
 //   background: seashell;
 // }
 .slide-one {
-  background: url(../assets/img/home_top.jpg) no-repeat center;
+  background: url(../assets/img/background.png) no-repeat center;
   background-size: cover;
 }
 .slide-two {
